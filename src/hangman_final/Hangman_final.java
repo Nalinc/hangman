@@ -21,8 +21,15 @@ public class Hangman_final {
      */
   
     public static void main(String[] args) {
-
-    JFrame frame = new JFrame("HMFrame");
+        
+/*        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new GameFrame().setVisible(true);
+            }
+        });*/
+        new GameFrame();
+/*
+        JFrame frame = new JFrame("HMFrame");
     GamePanel Panel = new GamePanel();
     //Panel.add
     Panel.setVisible(true);
@@ -32,6 +39,7 @@ public class Hangman_final {
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.add(Panel);
     frame.setVisible(true);        
+*/
     }
     
 }
