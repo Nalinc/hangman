@@ -36,14 +36,17 @@ public class GameFrame extends javax.swing.JFrame {
     };
     private int questionIndex = 0;
     
-    ImagePanel panel = new ImagePanel(new ImageIcon(getClass().getResource("bg.png")).getImage());
+    ImagePanel panelBackground = new ImagePanel(new ImageIcon(getClass().getResource("bg.png")).getImage());
+    ImagePanel panelImage = new ImagePanel(new ImageIcon(getClass().getResource("hangman_1.png")).getImage());
     
     public GameFrame() {
+        add(panelImage);
         initComponents();
         setVisible(true);
         setTitle("Login");
         //setLayout(new BorderLayout());
-        add(panel);
+        add(panelBackground);
+        
         question_area.setText(questions[questionIndex]);
         hideExtraBoxes();
 
