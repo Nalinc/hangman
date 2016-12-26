@@ -6,6 +6,9 @@
 package hangman_final;
 
 import java.awt.Dimension;
+import java.io.IOException;
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -20,7 +23,7 @@ public class Hangman_final {
      * @param args the command line arguments
      */
   
-    public static void main(String[] args) {
+    public static void main(String[] args) throws LineUnavailableException, UnsupportedAudioFileException, IOException {
         
 /*        java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
